@@ -67,3 +67,75 @@
     bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
   }
 }
+
+@each $sizeName, $sizeMap in $hamburger-sizes {
+
+  .hamburger--#{$sizeName} {
+    padding: map-get($sizeMap, layer-padding-y) map-get($sizeMap, layer-padding-x);
+    display: inline-block;
+    cursor: pointer;
+
+    transition-property: opacity, filter;
+    transition-duration: map-get($sizeMap, hover-transition-duration);
+    transition-timing-function: map-get($sizeMap, transition-timing-function);
+
+    // Normalize (<button>)
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+
+    &:hover {
+      @if map-get($sizeMap, hover-use-filter) == true {
+        filter: map-get($sizeMap, hover-use-filter);
+      }
+      @else {
+        opacity: map-get($sizeMap, hover-opacity);
+      }
+    }
+  }
+
+  .hamburger-box {
+    width: map-get($sizeMap, layer-width);
+    height: map-get($sizeMap, layer-height) * 3 + map-get($sizeMap, layer-spacing) * 2;
+    display: inline-block;
+    position: relative;
+  }
+
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: map-get($sizeMap, layer-height) / -2;
+
+    &,
+    &::before,
+    &::after {
+      width: map-get($sizeMap, layer-width);
+      height: map-get($sizeMap, layer-height);
+      background-color: map-get($sizeMap, layer-color);
+      border-radius: map-get($sizeMap, layer-border-radius);
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+    }
+
+    &::before {
+      top: (map-get($sizeMap, layer-spacing) + map-get($sizeMap, layer-height)) * -1;
+    }
+
+    &::after {
+      bottom: (map-get($sizeMap, layer-spacing) + map-get($sizeMap, layer-height)) * -1;
+    }
+  }
+
+}

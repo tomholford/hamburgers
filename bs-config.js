@@ -9,7 +9,7 @@ module.exports = {
   "injectChanges": true,
   "online": false,
   "open": false,
-  "port": 3000,
+  "port": 3030,
   "proxy": false,
   "notify": false,
   "watchTask": true

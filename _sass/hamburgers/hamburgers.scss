@@ -20,6 +20,66 @@ $hamburger-hover-opacity                   : 0.7 !default;
 $hamburger-hover-transition-duration       : 0.15s !default;
 $hamburger-hover-transition-timing-function: linear !default;
 
+// Sizes
+// Used to generate multiple sizes of each type. Leave
+// empty to simply generate hamburgers with default settings.
+// Input: A Sass Map:
+// $hamburger-sizes: (
+//   phone: (
+//     padding-x: 1rem,
+//     padding-y: 1rem,
+//     layer-width: 2.5rem,
+//     layer-height: 0.25rem,
+//     layer-spacing: 0.375rem,
+//     layer-color: #000,
+//     layer-border-radius: 0px,
+//     hover-opacity: 0.7,
+//     hover-transition-duration: 0.15s,
+//     hover-transition-timing-function: linear
+//   ),
+//   ...
+//  )
+// ==================================================
+// $hamburger-sizes                           : () !default;
+$hamburger-sizes: (
+  phone: (
+    padding-x: 1rem,
+    padding-y: 1rem,
+    layer-width: 2.5rem,
+    layer-height: 0.25rem,
+    layer-spacing: 0.375rem,
+    layer-color: #000,
+    layer-border-radius: 0px,
+    hover-opacity: 0.7,
+    hover-transition-duration: 0.15s,
+    hover-transition-timing-function: linear
+  ),
+  tablet: (
+    padding-x: 1rem,
+    padding-y: 1rem,
+    layer-width: 2.5rem,
+    layer-height: 0.25rem,
+    layer-spacing: 0.375rem,
+    layer-color: #000,
+    layer-border-radius: 0px,
+    hover-opacity: 0.7,
+    hover-transition-duration: 0.15s,
+    hover-transition-timing-function: linear
+  ),
+  desktop: (
+    padding-x: 1rem,
+    padding-y: 1rem,
+    layer-width: 2.5rem,
+    layer-height: 0.25rem,
+    layer-spacing: 0.375rem,
+    layer-color: #000,
+    layer-border-radius: 0px,
+    hover-opacity: 0.7,
+    hover-transition-duration: 0.15s,
+    hover-transition-timing-function: linear
+  )
+) !default;
+
 // To use CSS filters as the hover effect instead of opacity,
 // set $hamburger-hover-use-filter as true and
 // change the value of $hamburger-hover-filter accordingly.
@@ -29,32 +89,32 @@ $hamburger-hover-filter    : opacity(50%) !default;
 // Types (Remove or comment out what you don’t need)
 // ==================================================
 $hamburger-types: (
-  3dx,
-  3dx-r,
-  3dy,
-  3dy-r,
-  arrow,
-  arrow-r,
-  arrowalt,
-  arrowalt-r,
-  boring,
-  collapse,
-  collapse-r,
-  elastic,
-  elastic-r,
-  emphatic,
-  emphatic-r,
-  slider,
-  slider-r,
-  spring,
-  spring-r,
-  stand,
-  stand-r,
-  spin,
-  spin-r,
-  squeeze,
-  vortex,
-  vortex-r
+  // 3dx,
+  // 3dx-r,
+  // 3dy,
+  // 3dy-r,
+  // arrow,
+  // arrow-r,
+  // arrowalt,
+  // arrowalt-r,
+  // boring,
+  // collapse,
+  // collapse-r,
+  // elastic,
+  // elastic-r,
+  // emphatic,
+  // emphatic-r,
+  // slider,
+  // slider-r,
+  spring //,
+  // spring-r,
+  // stand,
+  // stand-r,
+  // spin,
+  // spin-r,
+  // squeeze,
+  // vortex,
+  // vortex-r
 ) !default;
 
 // Base Hamburger (We need this)
