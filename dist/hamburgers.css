@@ -66,17 +66,17 @@
   .hamburger--phone:hover {
     opacity: 0.7; }
   .hamburger--phone span.hamburger-box {
-    width: 2.5rem;
-    height: 1.5rem;
+    width: 25px;
+    height: 12px;
     display: inline-block;
     position: relative; }
     .hamburger--phone span.hamburger-box span.hamburger-inner {
       display: block;
       top: 50%;
-      margin-top: -0.125rem; }
+      margin-top: -1px; }
       .hamburger--phone span.hamburger-box span.hamburger-inner, .hamburger--phone span.hamburger-box span.hamburger-inner::before, .hamburger--phone span.hamburger-box span.hamburger-inner::after {
-        width: 2.5rem;
-        height: 0.25rem;
+        width: 25px;
+        height: 2px;
         background-color: #000;
         border-radius: 0px;
         position: absolute;
@@ -87,9 +87,9 @@
         content: "";
         display: block; }
       .hamburger--phone span.hamburger-box span.hamburger-inner::before {
-        top: -0.625rem; }
+        top: -5px; }
       .hamburger--phone span.hamburger-box span.hamburger-inner::after {
-        bottom: -0.625rem; }
+        bottom: -5px; }
 
 .hamburger--tablet {
   display: inline-block;
@@ -108,17 +108,17 @@
   .hamburger--tablet:hover {
     opacity: 0.7; }
   .hamburger--tablet span.hamburger-box {
-    width: 2.5rem;
-    height: 1.5rem;
+    width: 30px;
+    height: 17px;
     display: inline-block;
     position: relative; }
     .hamburger--tablet span.hamburger-box span.hamburger-inner {
       display: block;
       top: 50%;
-      margin-top: -0.125rem; }
+      margin-top: -1.5px; }
       .hamburger--tablet span.hamburger-box span.hamburger-inner, .hamburger--tablet span.hamburger-box span.hamburger-inner::before, .hamburger--tablet span.hamburger-box span.hamburger-inner::after {
-        width: 2.5rem;
-        height: 0.25rem;
+        width: 30px;
+        height: 3px;
         background-color: #000;
         border-radius: 0px;
         position: absolute;
@@ -129,9 +129,9 @@
         content: "";
         display: block; }
       .hamburger--tablet span.hamburger-box span.hamburger-inner::before {
-        top: -0.625rem; }
+        top: -7px; }
       .hamburger--tablet span.hamburger-box span.hamburger-inner::after {
-        bottom: -0.625rem; }
+        bottom: -7px; }
 
 .hamburger--desktop {
   display: inline-block;
@@ -150,17 +150,17 @@
   .hamburger--desktop:hover {
     opacity: 0.7; }
   .hamburger--desktop span.hamburger-box {
-    width: 2.5rem;
-    height: 1.5rem;
+    width: 35px;
+    height: 27px;
     display: inline-block;
     position: relative; }
     .hamburger--desktop span.hamburger-box span.hamburger-inner {
       display: block;
       top: 50%;
-      margin-top: -0.125rem; }
+      margin-top: -2.5px; }
       .hamburger--desktop span.hamburger-box span.hamburger-inner, .hamburger--desktop span.hamburger-box span.hamburger-inner::before, .hamburger--desktop span.hamburger-box span.hamburger-inner::after {
-        width: 2.5rem;
-        height: 0.25rem;
+        width: 35px;
+        height: 5px;
         background-color: #000;
         border-radius: 0px;
         position: absolute;
@@ -171,9 +171,9 @@
         content: "";
         display: block; }
       .hamburger--desktop span.hamburger-box span.hamburger-inner::before {
-        top: -0.625rem; }
+        top: -11px; }
       .hamburger--desktop span.hamburger-box span.hamburger-inner::after {
-        bottom: -0.625rem; }
+        bottom: -11px; }
 
 /*
    * Spring
@@ -204,13 +204,13 @@
   * Additional sizes from hamburger-sizes map:
   */
 .hamburger--spring--phone .hamburger-inner {
-  top: 0.125rem;
+  top: 1px;
   transition: background-color 0s 0.15s linear; }
   .hamburger--spring--phone .hamburger-inner::before {
-    top: 0.625rem;
+    top: 5px;
     transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
   .hamburger--spring--phone .hamburger-inner::after {
-    top: 1.25rem;
+    top: 10px;
     transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
 .hamburger--spring--phone.is-active .hamburger-inner {
@@ -219,20 +219,20 @@
   .hamburger--spring--phone.is-active .hamburger-inner::before {
     top: 0;
     transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0.625rem, 0) rotate(45deg); }
+    transform: translate3d(0, 5px, 0) rotate(45deg); }
   .hamburger--spring--phone.is-active .hamburger-inner::after {
     top: 0;
     transition: top 0.3s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0.625rem, 0) rotate(-45deg); }
+    transform: translate3d(0, 5px, 0) rotate(-45deg); }
 
 .hamburger--spring--tablet .hamburger-inner {
-  top: 0.125rem;
+  top: 1.5px;
   transition: background-color 0s 0.15s linear; }
   .hamburger--spring--tablet .hamburger-inner::before {
-    top: 0.625rem;
+    top: 7px;
     transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
   .hamburger--spring--tablet .hamburger-inner::after {
-    top: 1.25rem;
+    top: 14px;
     transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
 .hamburger--spring--tablet.is-active .hamburger-inner {
@@ -241,20 +241,20 @@
   .hamburger--spring--tablet.is-active .hamburger-inner::before {
     top: 0;
     transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0.625rem, 0) rotate(45deg); }
+    transform: translate3d(0, 7px, 0) rotate(45deg); }
   .hamburger--spring--tablet.is-active .hamburger-inner::after {
     top: 0;
     transition: top 0.3s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0.625rem, 0) rotate(-45deg); }
+    transform: translate3d(0, 7px, 0) rotate(-45deg); }
 
 .hamburger--spring--desktop .hamburger-inner {
-  top: 0.125rem;
+  top: 2.5px;
   transition: background-color 0s 0.15s linear; }
   .hamburger--spring--desktop .hamburger-inner::before {
-    top: 0.625rem;
+    top: 11px;
     transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
   .hamburger--spring--desktop .hamburger-inner::after {
-    top: 1.25rem;
+    top: 22px;
     transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
 .hamburger--spring--desktop.is-active .hamburger-inner {
@@ -263,8 +263,8 @@
   .hamburger--spring--desktop.is-active .hamburger-inner::before {
     top: 0;
     transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0.625rem, 0) rotate(45deg); }
+    transform: translate3d(0, 11px, 0) rotate(45deg); }
   .hamburger--spring--desktop.is-active .hamburger-inner::after {
     top: 0;
     transition: top 0.3s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0.625rem, 0) rotate(-45deg); }
+    transform: translate3d(0, 11px, 0) rotate(-45deg); }

@@ -43,11 +43,11 @@ $hamburger-hover-transition-timing-function: linear !default;
 // $hamburger-sizes                           : () !default;
 $hamburger-sizes: (
   phone: (
-    padding-x: 1rem,
-    padding-y: 1rem,
-    layer-width: 2.5rem,
-    layer-height: 0.25rem,
-    layer-spacing: 0.375rem,
+    padding-x: 10px,
+    padding-y: 10px,
+    layer-width: 25px,
+    layer-height: 2px,
+    layer-spacing: 3px,
     layer-color: #000,
     layer-border-radius: 0px,
     hover-opacity: 0.7,
@@ -55,11 +55,11 @@ $hamburger-sizes: (
     hover-transition-timing-function: linear
   ),
   tablet: (
-    padding-x: 1rem,
-    padding-y: 1rem,
-    layer-width: 2.5rem,
-    layer-height: 0.25rem,
-    layer-spacing: 0.375rem,
+    padding-x: 15px,
+    padding-y: 15px,
+    layer-width: 30px,
+    layer-height: 3px,
+    layer-spacing: 4px,
     layer-color: #000,
     layer-border-radius: 0px,
     hover-opacity: 0.7,
@@ -67,11 +67,11 @@ $hamburger-sizes: (
     hover-transition-timing-function: linear
   ),
   desktop: (
-    padding-x: 1rem,
-    padding-y: 1rem,
-    layer-width: 2.5rem,
-    layer-height: 0.25rem,
-    layer-spacing: 0.375rem,
+    padding-x: 10px,
+    padding-y: 10px,
+    layer-width: 35px,
+    layer-height: 5px,
+    layer-spacing: 6px,
     layer-color: #000,
     layer-border-radius: 0px,
     hover-opacity: 0.7,
